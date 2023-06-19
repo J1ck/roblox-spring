@@ -26,6 +26,8 @@ Approximated Spring Module for Roblox
 ``Spring.Force`` is how much force is applied to get to the destination
 ``Spring.Speed`` is how fast the spring is simulated
 
+All the spring's properties are able to be changed during simulation safely
+
 ## Example
 ```lua
 local RunService = game:GetService("RunService")
@@ -37,4 +39,10 @@ local Spring = SpringModule.new()
 RunService.RenderStepped:Connect(function(DeltaTime)
   local UpdatedPosition : Vector3 = Spring:Update(DeltaTime)
 end)
+
+while true do
+  task.wait(2)
+  Spring:Shove(Random.new():NextUnitVector() * 10)
+  Spring.Target = Random.new():NextUnitVector() * 10
+end
 ```
