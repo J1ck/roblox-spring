@@ -22,9 +22,9 @@ Approximated Spring Module for Roblox
 |Speed|number|
 
 ## Notes
-``Spring.Target`` is the "origin" of the spring. If this property is changed, the spring will gravitate towards the new position
-``Spring.Force`` is how much force is applied to get to the destination
-``Spring.Speed`` is how fast the spring is simulated
+- ``Spring.Target`` is the "origin" of the spring. If this property is changed, the spring will gravitate towards the new position
+- ``Spring.Force`` is how much force is applied to get to the destination
+- ``Spring.Speed`` is how fast the spring is simulated
 
 All the spring's properties are able to be changed during simulation safely
 
